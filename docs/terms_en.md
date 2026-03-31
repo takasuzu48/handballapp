@@ -2,7 +2,7 @@
 
 Last updated: April 1, 2026
 
-These Terms of Use ("Terms") govern your use of the iOS application "Handball Score" ("the App") provided by [Developer Name] ("Developer"). Please read these Terms carefully before using the App.
+These Terms of Use ("Terms") govern your use of the iOS application "Handball Simple Stats" ("the App") provided by [Takashi Suzuki] ("Developer"). Please read these Terms carefully before using the App.
 
 ---
 
@@ -79,7 +79,7 @@ By downloading, installing, or using the App, you agree to be bound by these Ter
 ## 10. Governing Law and Jurisdiction
 
 - These Terms are governed by the laws of Japan.
-- Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the court with jurisdiction over the Developer's location.
+- Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the court with jurisdiction over Tokyo.
 
 ---
 
@@ -87,7 +87,7 @@ By downloading, installing, or using the App, you agree to be bound by these Ter
 
 For questions about these Terms, please contact:
 
-- Email: [your-email@example.com]
+- Email: [tak48dev@gmail.com]
 
 ---
 
