@@ -2,7 +2,7 @@
 
 Last updated: April 1, 2026
 
-This Privacy Policy explains how [Developer Name] ("Developer") handles information in connection with the iOS application "Handball Score" ("the App").
+This Privacy Policy explains how [Takashi Suzuki] ("Developer") handles information in connection with the iOS application "Handball Simple Stats" ("the App").
 
 ---
 
@@ -64,7 +64,7 @@ This Privacy Policy may be updated as necessary. Changes will be posted on this 
 
 For questions or concerns about this Privacy Policy, please contact:
 
-- Email: [your-email@example.com]
+- Email: [tak48dev@gmail.com]
 
 ---
 
