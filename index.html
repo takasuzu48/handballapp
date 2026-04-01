@@ -155,8 +155,8 @@
 <div class="orb"></div>
 
 <div class="lang-toggle">
-  <button class="lang-btn active" id="btn-ja" onclick="setLang('ja')">JA</button>
-  <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
+  <button class="lang-btn active" id="btn-ja" id="btn-ja">JA</button>
+  <button class="lang-btn"        id="btn-en" id="btn-en">EN</button>
 </div>
 
 <main>
@@ -207,7 +207,7 @@
         <div class="app-card-top">
           <div class="app-icon">🤾</div>
           <div class="app-meta">
-            <div class="app-name">Handball Score</div>
+            <div class="app-name">Handball Stats</div>
             <div class="app-platform">for iPad</div>
           </div>
         </div>
@@ -245,12 +245,12 @@
           <div class="site-link-sub" data-lang="en">Data handling & ad info</div>
         </div>
       </a>
-      <a class="site-link" href="./support.html">
+      <a class="site-link" href="/cdn-cgi/l/email-protection#86ffe9f3f4abe3ebe7efeac6e3fee7ebf6eae3a8e5e9eb">
         <span class="site-link-icon">✉️</span>
         <div>
           <div class="site-link-title">Support</div>
-          <div class="site-link-sub" data-lang="ja">サポートページ</div>
-          <div class="site-link-sub" data-lang="en">Support Page</div>
+          <div class="site-link-sub" data-lang="ja">お問い合わせ</div>
+          <div class="site-link-sub" data-lang="en">Contact the developer</div>
         </div>
       </a>
     </div>
@@ -271,10 +271,42 @@
     if (!silent) localStorage.setItem('tak48dev-lang', lang);
   }
   (function() {
-    var saved = localStorage.getItem('tak48dev-lang');
-    var auto  = (navigator.language || 'ja').startsWith('ja') ? 'ja' : 'en';
+    var saved = localStorage.getItem('tak48dev-
+
+<script>
+(function () {
+  'use strict';
+
+  function setLang(lang, silent) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = lang;
+    var ja = document.getElementById('btn-ja');
+    var en = document.getElementById('btn-en');
+    if (ja) ja.classList.toggle('active', lang === 'ja');
+    if (en) en.classList.toggle('active', lang === 'en');
+    if (!silent) {
+      try { localStorage.setItem('tak48dev-lang', lang); } catch(e) {}
+    }
+  }
+
+  function initLang() {
+    var saved;
+    try { saved = localStorage.getItem('tak48dev-lang'); } catch(e) {}
+    var auto = (navigator.language || 'ja').startsWith('ja') ? 'ja' : 'en';
     setLang(saved || auto, true);
-  })();
+  }
+
+  function extraListeners() {}
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var bja = document.getElementById('btn-ja');
+    var ben = document.getElementById('btn-en');
+    if (bja) bja.addEventListener('click', function () { setLang('ja'); });
+    if (ben) ben.addEventListener('click', function () { setLang('en'); });
+    extraListeners();
+    initLang();
+  });
+})();
 </script>
 </body>
 </html>
